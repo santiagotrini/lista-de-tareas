@@ -1,8 +1,8 @@
 const Title = function(props) {
-  const { text } = props; // desestructuramiento
+  // const { text } = props; // desestructuramiento
   // const text = props.text;
   return (
-    <h1>{text}</h1>
+    <h1>{props.text}</h1>
   );
 };
 

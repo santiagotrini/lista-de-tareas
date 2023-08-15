@@ -1,21 +1,23 @@
 import ListItem from "./ListItem";
-import data from './data';
 
 
-const List = () => {
 
+const List = props => {
 
+  
+  const { tareas } = props;
+ 
 
   return (
-    <ul>
-      {data.map(item => 
+      <ul>
+      {tareas.map(item => 
         <ListItem 
           key={item.id} 
           text={item.text} 
           done={item.done}
         />
       )}  
-    </ul>
+    </ul>    
   );
 };
 

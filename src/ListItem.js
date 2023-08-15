@@ -31,7 +31,6 @@ const ListItem = props => {
           type="checkbox" 
         />
         <label style={style}>{props.text}</label>
-        {done ? <button>X</button> : null}
         {done && <button>X</button>}
     </li>
   );  
